@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <article>
+        <form name="frmcar" id="frmcar">
+        <fieldset id="fldcar" class="group">
+            <legend><span class="labelgroup">Datos del Registro</span></legend>
+            <span class="labelgroup">Datos de Dueño:</span><br><br>
+            <label for="nameDueno">Nombre:</label>
+            <input type="text" name="nameDueno" id="nameDueno" placeholder="Nombre completo"><br>
+            
+            <label for="duiDueno">Dui:</label>
+            <input type="text" name="duiDueno" id="duiDueno" placeholder="12345678-9">
+        <br>
+            <label for="nitDueno">Nit:</label>
+            <input type="text" name="nitDueno" id="nitDueno" placeholder="12345678-9"><br>
+            <!--Datos carro-->
+            <br>
+            <span class="labelgroup">Datos del Carro:</span><br><br>
+        <label for="selfab">Marca: </label>
+        
+        <select name="selfab" id="selfab">
+                <option value="Toyota">Toyota</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Honda">Honda</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+        </select>
+        
+        <label for="selmod">Modelo: </label>
+        <select name="selmod" id="selmod">
+            <option value="Corolla">Corolla</option>
+            <option value="Echo">Echo</option>
+            <option value="Yaris">Yaris</option>
+            <option value="Avensis">Avensis</option>
+            <option value="Camry">Camry</option>
+            <option value="Land Cruiser">Land Cruiser</option>
+            <option value="4 Runner">4 Runner</option>
+            <option value="Hilux">Hilux</option>
+        </select><br>
+        
+        <div>
+            <label for="radcolor">Color: </label>
+            <select name="radcolor" id="radcolor" class="select-css">
+                <option value="Blanco">Blanco</option>
+                <option value="Negro">Negro</option>
+                <option value="Gris">Gris</option>
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Rojo">Rojo</option>
+                <option value="Amarillo">Amarillo</option>
+                <option value="Beige">Beige</option>
+            </select>
+        </div>
+
+        <label for="txtanio">Año: </label>
+        <input type="number" name="txtanio" placeholder="2014" maxlength="4" /><br>
+        <label for="txtplaca">Placa de vehiculo: </label>
+        <input type="text" name="txtplaca" placeholder="P999999-2012"><br>
+        
+
+        <label>Fallas: </label><BR></BR>
+        <textarea name="txtfalla" id="txtfalla"cols="30" rows="10"></textarea><br>
+        
+
+        <button  name="btnEnviar" id="enviar" value="Enviar">enviar</button>
+        
+        </fieldset>
+        </form>
+        <div id="tasks"></div>
+        
+        </article>
+        <div id="most">
+        </div>
+        <script src="js/bd.js"></script>
+        <div id="infopersona">
+        </div>
+        <div id="infocarro"></div>
+        <article>
+        </article>
+        </section>
+</body>
+</html>
